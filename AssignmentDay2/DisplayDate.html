@@ -21,10 +21,10 @@
             }
             else
             {
-                hours=d.getHours-12;
+                hours=d.getHours()-12;
                 m="PM";
             }
-            document.getElementById("dayname1").innerHTML="Current time is : " + d.getHours()+ " " +m + " : " +d.getMinutes() +" : " + d.getSeconds();
+            document.getElementById("dayname1").innerHTML="Current time is : " + hours+ " " +m + " : " +d.getMinutes() +" : " + d.getSeconds();
             
         </script>
         
