@@ -19,3 +19,39 @@ function fun2()
     console.log(`The Os name is ${v.split(" ")[0]} and Version is ${v.split(" ")[1]}`);
     document.getElementById("out1").innerHTML=`The Os name is ${v.split(" ")[0]} and Version is ${v.split(" ")[1]}`;
 }
+function fun3()
+{
+    let m=document.getElementById("marks").value;
+    if(m>0){
+    if (m>35)
+    {
+        if(m<50)
+        {
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade is D`
+        }
+        else if(m>=50 && m<75){
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade is C`
+        }
+        else if (m>=75 && m<90)
+        {
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade is B`
+        }
+        else if (m>=90 && m<=100)
+        {
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade is A`
+
+        }
+        else 
+        {
+            document.getElementById("output").innerHTML=`Input correct marks`
+        }
+    }
+    else
+    {
+        document.getElementById("output").innerHTML=` Marks : ${m} Grade is F`
+    }
+}
+else
+document.getElementById("output").innerHTML=`Input correct marks`;
+
+}
