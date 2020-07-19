@@ -1,5 +1,7 @@
 let a=prompt("Enter value and check in console");
 console.log(a);
+console.warn(a);
+console.error(a);
 function fun()
 {
     let v=document.getElementById("inputText").value;

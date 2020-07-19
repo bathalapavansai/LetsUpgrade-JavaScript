@@ -27,18 +27,18 @@ function fun3()
     {
         if(m<50)
         {
-            document.getElementById("output").innerHTML=` Marks : ${m} Grade is D`
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade : D`
         }
         else if(m>=50 && m<75){
-            document.getElementById("output").innerHTML=` Marks : ${m} Grade is C`
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade : C`
         }
         else if (m>=75 && m<90)
         {
-            document.getElementById("output").innerHTML=` Marks : ${m} Grade is B`
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade : B`
         }
         else if (m>=90 && m<=100)
         {
-            document.getElementById("output").innerHTML=` Marks : ${m} Grade is A`
+            document.getElementById("output").innerHTML=` Marks : ${m} Grade : A`
 
         }
         else 
@@ -48,7 +48,7 @@ function fun3()
     }
     else
     {
-        document.getElementById("output").innerHTML=` Marks : ${m} Grade is F`
+        document.getElementById("output").innerHTML=` Marks : ${m} Grade : F`
     }
 }
 else

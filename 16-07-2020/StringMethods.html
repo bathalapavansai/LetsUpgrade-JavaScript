@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+        <body style="background-color:rgb(177, 160, 255);">
+
+            <h2>JavaScript String Properties</h2>
+            
+            <p id="demo"></p>
+            <script>
+            var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            document.getElementById("demo").innerHTML = "The length property returns the length of a string:"+ txt.length;
+            </script>
+
+            <p>The indexOf() method returns the position of the first occurrence of a specified text</p>
+            <p id="demo1"></p>
+            <script>
+            var str = "Please locate where 'locate' occurs!";
+            var pos = str.indexOf("locate");
+            document.getElementById("demo1").innerHTML ="The position of the first occurrence of a specified text:" + pos;
+            </script>
+
+            <p>The indexOf() method returns -1 if a specified text not found</p>
+            <p id="demo2"></p>
+            <script>
+            var pos = str.indexOf("locater");
+            document.getElementById("demo2").innerHTML = "The position of the first occurrence of a specified text:" + pos;
+            </script>
+
+            <p>The lastIndexOf() method returns the position of the last occurrence of a specified text</p>
+            <p id="demo3"></p>
+            <script>
+                var pos = str.lastIndexOf("locate");
+                document.getElementById("demo3").innerHTML ="The position of the last occurrence of a specified text:"+ pos;
+            </script>
+
+            <p>The lastIndexOf() method returns -1 if a specified text not found</p>
+            <p id="demo4"></p>
+            <script>
+            var pos = str.lastIndexOf("locater");
+            document.getElementById("demo4").innerHTML ="The position of the last occurrence of a specified text:"+ pos;
+            </script>
+
+            <p>Both indexOf(), and lastIndexOf() methods accept a second parameter as the starting position for the search.</p>
+            <p id="demo5"></p>
+            <p id="demo6"></p>
+            <script>
+                var pos1 = str.indexOf("locate",15);
+                document.getElementById("demo5").innerHTML ="indexOf() method with a second parameter as the starting position for the search: "+ pos1;
+                var pos2 = str.lastIndexOf("locate", 15);
+                document.getElementById("demo6").innerHTML ="lastIndexOf() method with a second parameter as the starting position for the search : "+pos2;
+            </script>
+
+            <h2>Searching for a String in a String</h2>
+            <p>The search() method searches a string for a specified value and returns the position of the match: </p>
+            <p id="demo7"></p>
+            <script>
+            var pos = str.search("locate");
+            document.getElementById("demo7").innerHTML = "The search() method:  "+pos;
+            </script>
+            <p>The search() method cannot take a second start position argument as the indexOf() ans index method cannot take powerful search values (regular expressions).</p>
+            
+            <h2>Extracting String Parts</h2>
+            <p>There are 3 methods for extracting a part of a string:</p>
+            <ul>
+                <li>slice(<em>start</em>, <em>end</em>)</li>
+                <li>substring(<em>start</em>, <em>end</em>)</li>
+                <li>substr(<em>start</em>, <em>length</em>)</li>
+              </ul>
+            <p>slice() extracts a part of a string and returns the extracted part in a new string</p>
+            <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
+            <p>If you omit the second parameter, the method will slice out the rest of the string: </p>
+            <p id="demo8"></p>
+            <p id="demo9"></p>
+            <p id="demo10"></p>
+            <p id="demo11"></p>
+            <script>
+                var str = "Apple, Banana, Kiwi";
+                var res1 = str.slice(7,13);
+                var res2 = str.slice(-12,-6);
+                var res3 = str.slice(8);
+                var res3 = str.slice(-8);
+                document.getElementById("demo8").innerHTML ="the extracted part in a new string: "+ res1; 
+                document.getElementById("demo9").innerHTML = "the extracted part from end in a new string: "+ res2; 
+                document.getElementById("demo10").innerHTML = "the extracted part without  second parameter  in a new string: "+ res3; 
+                document.getElementById("demo11").innerHTML = "the extracted part from end without second parameter in a new string: "+ res4; 
+            </script>
+                
+
+            <h1>Array Methods</h1>
+            <ul>
+                <li>arr.push(...items) – adds items to the end,</li>
+                <li>arr.pop() – extracts an item from the end,</li>
+                <li>arr.shift() – extracts an item from the beginning,</li>
+                <li>arr.unshift(...items) – adds items to the beginning.</li>
+                <li>arr.splice(index[, deleteCount, elem1, ..., elemN])--It starts from the position index: removes deleteCount elements and then inserts elem1, ..., elemN at their place. Returns the array of removed elements.</li>
+                <li>arr.slice([start], [end])---It returns a new array copying to it all items from index start to end (not including end). Both start and end can be negative, in that case position from array end is assumed.</li>
+                <li>arr.concat(arg1, arg2..)---The method arr.concat creates a new array that includes values from other arrays and additional items
+                <li>arr.forEach method allows to run a function for every element of the array.</li>
+                <li>arr.indexOf, arr.lastIndexOf--------The methods arr.indexOf, arr.lastIndexOf and arr.includes have the same syntax and do essentially the same as their string counterparts, but operate on items instead of characters:</li>
+                <li>find and findIndex ---the arr.find(fn) method comes in  , we find an object with the specific condition?</li>
+                <li>filter---The find method looks for a single (first) element that makes the function return true.If there may be many, we can use arr.filter(fn).</li>
+                <li>map----The arr.map method is one of the most useful and often used.It calls the function for each element of the array and returns the array of results.</li>
+                <li>sort(fn)---The call to arr.sort() sorts the array</li> in place, changing its element order.It also returns the sorted array, but the returned value is usually ignored, as arr itself is modified.
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+</html>
