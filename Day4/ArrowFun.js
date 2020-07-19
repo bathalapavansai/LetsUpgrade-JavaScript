@@ -1,7 +1,4 @@
-ask = (ques)=>{
-    var confirm=prompt(ques)
-    confirma(confirm)
+ask = (ques,yeah,nope)=>{
+    confirm(ques)==true?yeah():nope()
 }
-confirma=(confirm)=>{
-    confirm=='yes'?alert("You have agreed"):alert("You cancelled the execution")
-}
+ask("Do you agree?",function(){alert("You have agreed")},function(){alert("You cancelled the execution")})
