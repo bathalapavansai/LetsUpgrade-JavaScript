@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Database</title>
+        <Script defer src="./User.js"></Script>
+    </head>
+
+    <body> 
+            <table border="1" width=100%>
+            <tr>
+            <td>
+                <h1>Users</h1>
+                
+                <p>enter name: <input type="text" id="addusername"></p>
+                <p>enter age: <input type="text" id="adduserage"></p>
+                <p>enter email: <input type="text" id="adduseremail"></p>
+                <button name="User" id="adduser" onclick="addUser()" >add me as User</button>
+
+                
+            </td>
+            <td>
+                <h1>Moderator</h1>   
+                <p>enter (user-email): <input type="text"  id="Moduser">addcoins</p>
+                <p>enter (coins): <input type="number"  id="addcoins"><button  onclick="AddCoins()" >addcoins</button></p>
+                <p>enter (coins): <input type="number"  id="subcoins"><button  onclick="subCoins()" >subcoins</button></p>
+                <p id="coins"></p>
+            </td>
+            <td>
+                <h1>Admin</h1>   
+                <p>enter email: <input type="text" id="moduser"></p>
+                <p>enter course for addition: <input type="text" id="addco"><button  onclick="AddCourse()" >AddCourse</button></p>
+                <p>enter course for deletion: <input type="text" id="delco"><button  onclick="SubCourse()" >SubCourse</button></p>         
+                <p id="course"></p>
+            </td>
+            </tr>
+        </table>
+        <p>enter email: <input type="text" id="disuser"></p>
+        <button name="User" id="disuser" onclick="showDetails()" >display user details</button>
+        <p id="showdetails"></p>
+    </body>
+
+
+</html>
