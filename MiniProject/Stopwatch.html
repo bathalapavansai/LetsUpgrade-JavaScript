@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            StopWatch
+        </title>
+        <script src="Stopwatch.js"></script>
+    </head>
+    <body>
+    <table border="1" width=50%>
+    <tr>
+        <th>Stopwatch</th>
+        <th>Timer</th>
+    </tr>
+    <tr>
+        <td>
+        <div style="background-color: azure;">
+            <p id ="out">00 : 00 : 00 </p>
+        </div>
+        <button onclick="start()">start</button>  
+        <button onclick="pause()">pause</button>  
+        <button onclick="reset()">reset</button>
+        </td>  
+        <td>
+            hh :<input type="number" id="h" min="0" max="23">
+            mm :<input type="number" id="m" min="0" max="59">
+            ss :<input type="number" id="s" min="0" max="59">
+            <button onclick="set()">Set timer</button>
+            <button onclick="resetTimer()">Reset timer</button>
+            <br>
+            <div><p id='out1'></p></div>
+        </td>
+    </tr>
+    </table>
+    </body>
+</html>
